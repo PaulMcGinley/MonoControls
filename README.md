@@ -8,7 +8,7 @@ Add in the controls:
         MonoButton testButton;
 ```
 
-Add in InitializeControls():
+Add in Initialize():
 ```
   // Button
   testButton = new MonoButton() {
