@@ -5,7 +5,7 @@ Add a List of MonoControls:
 
 Add in the controls:
 ```
-        MonoButton testButton;
+  MonoButton testButton;
 ```
 
 Add in Initialize():
