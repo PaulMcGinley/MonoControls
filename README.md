@@ -1,10 +1,15 @@
 Add a List of MonoControls:
+```
   List<MonoControl> controls = new List<MonoControl>();
+```
 
-Add in the controls:  
+Add in the controls:
+```
         MonoButton testButton;
+```
 
 Add in InitializeControls():
+```
   // Button
   testButton = new MonoButton() {
     Normal = Content.Load<Texture2D>("Controls/Button/Normal"),                                 // Load the normal texture
@@ -19,11 +24,16 @@ Add in InitializeControls():
   testButton.MouseDown += TestButton_MouseDown;                                                   // Subscribe to the MouseDown event
   testButton.MouseUp += TestButton_MouseUp;                                                       // Subscribe to the MouseUp event
   controls.Add(testButton);                                                                       // Add the control to the list of controls
+```
 
 Add in Update(GameTime gameTime):
+```
   foreach (var control in controls)
     control.Update();
+```
 
 Add in Draw(GameTime gameTime):
+```
   foreach (var control in controls)
     control.Draw(_spriteBatch);
+```
